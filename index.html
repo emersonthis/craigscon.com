@@ -27,42 +27,42 @@
 
 
 </head>
-<body class="homepage">
+<body class="homepage desktop">
     <script type="text/javascript"><!--
-    function C(k){return(document.cookie.match('(^|; )'+k+'=([^;]*)')||0)[2]}
-    var pagetype, pagemode;
-    (function(){
-        var h = document.documentElement;
-        h.className = h.className.replace('no-js', 'js');
-        var b = document.body;
-        var bodyClassList = b.className.split(/\s+/);;
-        pagetype = bodyClassList[0]; // dangerous assumption
-        var fmt = C('cl_fmt');
-        if ( fmt === 'regular' || fmt === 'mobile' ) {
-            pagemode = fmt;
-        } else if (screen.width <= 480) {
-            pagemode = 'mobile';
-        } else {
-            pagemode = 'regular';
-        }
-        var lng = C('cl_def_lang');
-        if (lng) bodyClassList.push(lng.substr(0,2));
-        pagemode = pagemode === 'mobile' ? 'mobile' : 'desktop';
-        bodyClassList.push(pagemode);
-        if (C('hidesearch') === '1' && pagemode !== 'mobile') {
-            bodyClassList.push('hide-search');
-        }
-        var width = window.innerWidth || document.documentElement.clientWidth;
-        if (width > 1000) { bodyClassList.push('w1024'); }
-        if (typeof window.sectionBase !== 'undefined') {
-            var mode = (decodeURIComponent(C('cl_tocmode') || '').match(new RegExp(window.sectionBase + ':([^,]+)', 'i')) || {})[1] || window.defaultView;
-            if (mode) {
-                bodyClassList.push(mode);
-            }
-        }
-        b.className = bodyClassList.join(' ');
-    }());
---></script>
+//     function C(k){return(document.cookie.match('(^|; )'+k+'=([^;]*)')||0)[2]}
+//     var pagetype, pagemode;
+//     (function(){
+//         var h = document.documentElement;
+//         h.className = h.className.replace('no-js', 'js');
+//         var b = document.body;
+//         var bodyClassList = b.className.split(/\s+/);;
+//         pagetype = bodyClassList[0]; // dangerous assumption
+//         var fmt = C('cl_fmt');
+//         if ( fmt === 'regular' || fmt === 'mobile' ) {
+//             pagemode = fmt;
+//         } else if (screen.width <= 480) {
+//             pagemode = 'mobile';
+//         } else {
+//             pagemode = 'regular';
+//         }
+//         var lng = C('cl_def_lang');
+//         if (lng) bodyClassList.push(lng.substr(0,2));
+//         pagemode = pagemode === 'mobile' ? 'mobile' : 'desktop';
+//         bodyClassList.push(pagemode);
+//         if (C('hidesearch') === '1' && pagemode !== 'mobile') {
+//             bodyClassList.push('hide-search');
+//         }
+//         var width = window.innerWidth || document.documentElement.clientWidth;
+//         if (width > 1000) { bodyClassList.push('w1024'); }
+//         if (typeof window.sectionBase !== 'undefined') {
+//             var mode = (decodeURIComponent(C('cl_tocmode') || '').match(new RegExp(window.sectionBase + ':([^,]+)', 'i')) || {})[1] || window.defaultView;
+//             if (mode) {
+//                 bodyClassList.push(mode);
+//             }
+//         }
+//         b.className = bodyClassList.join(' ');
+//     }());
+// --></script>
 <div class="wrapper">
     <section id="pagecontainer">
         <div class="bglogo"></div>
@@ -215,7 +215,7 @@
                             <li><a href="/i/personals?category=m4m" class="m4m" data-cat="m4m"><span class="txt">designers seeking designers<sup class="c"></sup></span></a></li>
                             <li><a href="/i/personals?category=msr" class="msr" data-cat="msr"><span class="txt">misc tech<sup class="c"></sup></span></a></li>
                             <li><a href="/i/personals?category=cas" class="cas" data-cat="cas"><span class="txt">casual employment<sup class="c"></sup></span></a></li>
-                            <li><a href="/i/personals?category=mis" class="mis" data-cat="mis"><span class="txt">missed meetings<sup class="c"></sup></span></a></li>
+                            <li><a href="/i/personals?category=mis" class="mis" data-cat="mis"><span class="txt">missed deadlines<sup class="c"></sup></span></a></li>
                         </ul>
                     </div>
                 </div>
@@ -227,14 +227,11 @@
                             <li><a href="/search/ata" class="ata" data-cat="ata"><span class="txt">dial-up modems<sup class="c"></sup></span></a></li>
                             <li><a href="/search/ppa" class="ppa" data-cat="ppa"><span class="txt">paper programming books<sup class="c"></sup></span></a></li>
                             <li><a href="/search/ara" class="ara" data-cat="ara"><span class="txt">v-shaped keyboards<sup class="c"></sup></span></a></li>
-                            <li><a href="/search/sna" class="sna" data-cat="sna"><span class="txt">magic the gathering cards<sup class="c"></sup></span></a></li>
                             <li><a href="/i/auto_parts" class="pta wta" data-cat="pta wta"><span class="txt">really heavy monitors<sup class="c"></sup></span></a></li>
                         </ul>
                         <ul id="sss1" class="mc">
                             <li><a href="/i/bikes" class="bia bip" data-cat="bia bip"><span class="txt">giant tower harddrives<sup class="c"></sup></span></a></li>
                             <li><a href="/i/boats" class="boo bpa" data-cat="boo bpa"><span class="txt">beep boop beep<sup class="c"></sup></span></a></li>
-                            <li><a href="/search/bka" class="bka" data-cat="bka"><span class="txt">blinking lights<sup class="c"></sup></span></a></li>
-                            <li><a href="/search/ema" class="ema" data-cat="ema"><span class="txt">cds/dvd/vhs<sup class="c"></sup></span></a></li>
                             <li><a href="/search/cla" class="cla" data-cat="cla"><span class="txt">bikes with gears<sup class="c"></sup></span></a></li>
                             <li><a href="/search/cba" class="cba" data-cat="cba"><span class="txt">outdoor sports equipment<sup class="c"></sup></span></a></li>
                             <li><a href="/search/haa" class="haa" data-cat="haa"><span class="txt">cassette tapes<sup class="c"></sup></span></a></li>
@@ -279,7 +276,7 @@
             <div class="speakers search pic">
                 <h4 class="ban">
                     <a href="/search/hhh" class="hhh" data-alltitle="all housing" data-cat="hhh">
-                        <span class="txt">speakers<sup class="c"></sup></span>
+                        <span class="txt">unconfirmed speakers<sup class="c"></sup></span>
                     </a>
                 </h4>
                 <div class="row">
